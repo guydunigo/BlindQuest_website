@@ -1,0 +1,25 @@
+@font-face {
+    font-family: Manaspace;
+    src: url(fonts/manaspace.ttf);
+}
+
+body {
+	background: #fbc555;
+}
+
+.navbar {
+	background-color: rgba(255,255,255,100);
+	border: 0px;
+	border-radius: 0px;
+}
+
+.navbar-header .navbar-brand {
+    font-family: Manaspace;
+	padding: 0;
+	padding-left: 5px;
+	height: 80px;
+}
+
+.navbar-header .navbar-brand > img {
+    height: 80px;
+}
