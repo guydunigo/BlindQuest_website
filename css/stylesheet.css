@@ -6,7 +6,7 @@
 body {
 	/*background-color: #fbdea3;*/
 	/*background-color: #e6d86a;*/
-	background-color: #e1ea80;
+	background-color: #e3ea9b;
 }
 
 h1,h2,h3,h4 {
@@ -57,17 +57,18 @@ img.logo {
 nav.navbar button {
 	border-radius: 0;
 	border: 0;
-	background: #e6d86a;
+	margin-top: 12px;
+	background-color: #dced33;
+}
+
+nav.navbar button.navbar-toggle:hover, nav.navbar button.navbar-toggle:active, nav.navbar button.navbar-toggle:focus {
+	background-color: #d7a140;
 }
 
 .row {
 	margin-top: 10vh;
 	margin-bottom: 2vh;
 	height: 88vh;
-	background-color: #e1ea80;
-}
-
-.row-head {
 }
 
 .col-text {
