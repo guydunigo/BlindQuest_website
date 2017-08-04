@@ -4,7 +4,9 @@
 }
 
 body {
-	background-color: #fbdea3;
+	/*background-color: #fbdea3;*/
+	/*background-color: #e6d86a;*/
+	background-color: #e1ea80;
 }
 
 h1,h2,h3,h4 {
@@ -13,12 +15,26 @@ h1,h2,h3,h4 {
 }
 
 nav.navbar {
-	background-color: #fbc555;
+	/*background-color: #fbc555;*/
+	/*background-color: #CAD711; */
+	background-color: #dced33;
 	border: 0px;
+	border-bottom: 5px solid #d7a140;
 	border-radius: 0px;
 
-	position: absolute;
+	position: fixed;
+	z-index: 10;
 	width: 100%;
+}
+
+div#bottomLine {
+	position: fixed;
+	bottom: 0;
+	z-index: 10;
+	width: 100%;
+
+	height: 7px;
+	background-color: #d7a140;
 }
 
 .navbar-header .navbar-brand {
@@ -28,30 +44,36 @@ nav.navbar {
 }
 
 img.logo {
-	image-rendering: optimizespeed;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -o-crisp-edges;
+	image-rendering: -webkit-optimize-contrast;
+	-ms-interpolation-mode: nearest-neighbor;
+	
+	image-rendering: pixelated;
+
 	width: 100%;
 }
 
 nav.navbar button {
 	border-radius: 0;
-	background: #fbdea3;
+	border: 0;
+	background: #e6d86a;
 }
 
 .row {
-	margin-top: 5vh;
-	margin-bottom: 5vh;
-	height: 90vh;
-	background-color: #fbe5b6;
-}
-
-.row-first {
 	margin-top: 10vh;
-	height: 85vh;
+	margin-bottom: 2vh;
+	height: 88vh;
+	background-color: #e1ea80;
 }
 
 .row-head {
 }
 
 .col-text {
-	padding-top: 20px;
+	padding-top: 10vh;
+}
+
+p.test {
+	text-align: justify;
 }
