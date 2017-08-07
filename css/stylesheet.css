@@ -10,6 +10,13 @@ body {
 	/*background-color: #e6d86a;*/
 	background-color: #e3ea9b;
 	color: #777;
+	position: relative;
+}
+
+a,
+a:active,
+a:focus {
+	outline: 0;
 }
 
 h1,h2,h3,h4 {
@@ -99,7 +106,6 @@ a#lang {
 	color: #777;
 
 	text-decoration: none;
-	outline: 0;
 	border: 0;
 }
 
@@ -143,8 +149,11 @@ a.dlBtn:active  {
 	font-size: 2rem;
 }
 
-.col-text {
+.col-right {
 	padding-top: 13rem;
+}
+
+.col-text {
 	font-size: 2.5rem;
 }
 
@@ -164,7 +173,7 @@ a.dlBtn:active  {
 		max-height: 40vh;
 	}
 
-	.col-text {
+	.col-right {
 		padding-top: 5rem;
 	}
 
@@ -177,5 +186,10 @@ a.dlBtn:active  {
 @media (max-width: 767px) {
 	.col-text {
 		font-size: 1.5rem;
+	}
+
+	.col-right {
+		top: -7px;
+		padding-top: 0rem;
 	}
 }
