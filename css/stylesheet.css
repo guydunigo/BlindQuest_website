@@ -82,6 +82,37 @@ a#lang {
 	color: #7A5209;
 }
 
+.down-arrow {
+	position: fixed;
+	min-width: 100%;
+	
+	bottom: 4vh;
+
+	font-size: 10vh;
+}
+
+.down-arrow button,
+.down-arrow button:hover,
+.down-arrow button:focus,
+.down-arrow button:active {
+	transition-duration: 0.5s;
+	color: #777;
+
+	text-decoration: none;
+	outline: 0;
+	border: 0;
+}
+
+.down-arrow button:hover {
+	transition-duration: 0.5s;
+	top: 5vh;
+}
+
+.down-arrow button:active {
+	transition-duration: 0.3s;
+	top: 50vh;
+}
+
 /*-------------------- Slides --------------------*/
 
 .row {
@@ -113,11 +144,38 @@ a.dlBtn:active  {
 }
 
 .col-text {
-	padding-top: 20vh;
-	font-size: 3rem;
+	padding-top: 13rem;
+	font-size: 2.5rem;
 }
 
 .row-head {
-	padding-bottom: 10vh;
+	padding-bottom: 7rem;
 	font-size: 5vh;
+
+	text-align: right;
+}
+
+@media (max-width: 991px) {
+	.col-left {
+		margin-bottom: 4rem;
+	}
+
+	img.logo {
+		max-height: 40vh;
+	}
+
+	.col-text {
+		padding-top: 5rem;
+	}
+
+	.row-head {
+		padding-bottom: 1rem;
+		text-align: center;
+	}
+}
+
+@media (max-width: 767px) {
+	.col-text {
+		font-size: 1.5rem;
+	}
 }
