@@ -208,6 +208,10 @@ a.dlBtn:active  {
 		margin-bottom: 4rem;
 	}
 
+	.col-text p, .col-text table {
+		font-size: 2rem;
+	}
+
 	img.logo {
 		max-height: 40vh;
 	}
@@ -225,6 +229,10 @@ a.dlBtn:active  {
 @media (max-width: 767px) {
 	.col-text {
 		font-size: 1.5rem;
+	}
+
+	.col-text p, .col-text table {
+		font-size: 1.2rem;
 	}
 
 	.col-right {
