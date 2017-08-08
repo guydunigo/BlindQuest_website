@@ -111,7 +111,7 @@ a#lang {
 
 .down-arrow button:hover {
 	transition-duration: 0.5s;
-	top: 5vh;
+	top: 3vh;
 }
 
 .down-arrow button:active {
@@ -122,9 +122,9 @@ a#lang {
 /*-------------------- Slides --------------------*/
 
 .row {
-	margin-top: 10vh;
-	margin-bottom: 2vh;
-	height: 88vh;
+	padding-top: 10vh;
+	padding-bottom: 2vh;
+	height: 100vh;
 }
 
 img.logo {
@@ -149,11 +149,8 @@ a.dlBtn:active  {
 	font-size: 2rem;
 }
 
-.col-right {
-	padding-top: 13rem;
-}
-
 .col-text {
+	padding-top: 13rem;
 	font-size: 2.5rem;
 }
 
@@ -173,7 +170,7 @@ a.dlBtn:active  {
 		max-height: 40vh;
 	}
 
-	.col-right {
+	.col-text {
 		padding-top: 5rem;
 	}
 
