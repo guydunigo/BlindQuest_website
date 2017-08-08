@@ -24,10 +24,21 @@ h1,h2,h3,h4 {
 	color: #777;
 }
 
-.hoverGrowth:hover  {
-	transition-duration: 1s;
-	width: 120%;
-	margin-left: -10%;
+.hoverGrowth {
+	transition-duration: 0.7s;
+	margin-left: 2%;
+	width: 96%;
+}
+
+.hoverGrowth:hover {
+	width: 110%;
+	margin-left: -5%;
+}
+
+.hoverGrowth:active {
+	transition-duration: 0.4s;
+	width: 90%;
+	margin-left: 5%;
 }
 
 .bq {
@@ -55,7 +66,6 @@ nav.navbar {
 	border-bottom: 5px solid #d7a140;
 	border-radius: 0px;
 
-	position: fixed;
 	z-index: 100;
 	width: 100%;
 }
@@ -64,17 +74,6 @@ nav.navbar {
 	font-family: Manaspace;
 	font-size: 3rem;
 	margin-top: 5px;
-}
-
-nav.navbar button {
-	border-radius: 0;
-	border: 0;
-	margin-top: 12px;
-	background-color: #dced33;
-}
-
-nav.navbar button.navbar-toggle:hover, nav.navbar button.navbar-toggle:active, nav.navbar button.navbar-toggle:focus {
-	background-color: #d7a140;
 }
 
 a#lang {
@@ -87,6 +86,28 @@ a#lang {
 
 	font-size: 20px;
 	color: #7A5209;
+}
+
+/*-------------------- Slide menu --------------------*/
+
+#navbar-links {
+	position: fixed;
+	right: 10px;
+	top: 40vh;
+	
+}
+
+#navbar-links ul li {
+	clear: both;
+}
+
+#navbar-links ul li a {
+	color: #7A5209;
+	background-color: transparent;
+}
+
+#navbar-links ul li.active a {
+	color: #007F7F;
 }
 
 /*-------------------- Change slide arrows --------------------*/
@@ -108,10 +129,11 @@ a#lang {
 	bottom: 0;
 }
 
-.arrow span,
-.arrow button:hover span
-.arrow button:active span {
+.arrow span {
 	transition-duration: 0.5s;
+}
+.arrow button:active span {
+	transition-duration: 0.1s;
 }
 
 .arrow button,
@@ -161,7 +183,6 @@ a.dlBtn,
 a.dlBtn:focus,
 a.dlBtn:hover,
 a.dlBtn:active  {
-	transition-duration: 1s;
 	border-radius: 0;
 	background-color: #7A5209;
 	border: 0;
