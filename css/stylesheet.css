@@ -42,7 +42,7 @@ h1,h2,h3,h4 {
 }
 
 .bq {
-	font-family: Manaspace;
+	font-family: Manaspace, Glyphicons Halflings;
 	color: #007F7F;
 }
 
@@ -231,4 +231,18 @@ a.dlBtn:active  {
 		top: -7px;
 		padding-top: 0rem;
 	}
+}
+
+
+/*-------------------- how it works --------------------*/
+
+#func table {
+	min-width: 100%;
+}
+
+#func table td:first-child {
+	min-width: auto;
+}
+#func table td:last-child {
+	text-align: right;
 }
