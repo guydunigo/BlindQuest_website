@@ -1,6 +1,7 @@
 var main = function() {
-    //$(".down-arrow button").click(scrollToNextSlide);
-    $(document).on("click",".down-arrow button",scrollToNextSlide);
+    $(".arrow").removeClass("hidden")
+    $(".up-arrow button").click(scrollToPreviousSlide);
+    $(".down-arrow button").click(scrollToNextSlide);
 }
 
 var getCurrentSlideIndex = function() {
