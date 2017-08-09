@@ -1,4 +1,4 @@
-var main = function () {
+const main = function () {
     $(".up-arrow button").click(scrollToPreviousSlide);
     $(".down-arrow button").click(scrollToNextSlide);
 
@@ -21,18 +21,18 @@ var main = function () {
     })
 }
 
-var getCurrentSlideIndex = function () {
+const getCurrentSlideIndex = function () {
     const slidesOffsets = $(".slide").map(function (index, elm) { return $(elm).offset().top });
     const currentScroll = $("html,body").scrollTop() + $(window).height() / 2;
-    var i = 0;
+    let i = 0;
 
     for (i = slidesOffsets.length - 1; i > 0 && currentScroll < slidesOffsets[i]; i--);
 
     return i;
 }
 
-var getSlideTopOffset = function (slideIndex) {
-    var slides = $(".slide");
+const getSlideTopOffset = function (slideIndex) {
+    const slides = $(".slide");
     if (slideIndex < 0)
         slideIndex = 0;
     else if (slideIndex >= slides.length)
@@ -41,29 +41,29 @@ var getSlideTopOffset = function (slideIndex) {
     return $(slides[slideIndex]).offset().top;
 }
 
-var scrollToPreviousSlide = function () {
+const scrollToPreviousSlide = function () {
     $("html, body").animate({ 'scrollTop': getSlideTopOffset(getCurrentSlideIndex() - 1) }, 500);
 }
-var scrollToNextSlide = function () {
+const scrollToNextSlide = function () {
     $("html, body").animate({ 'scrollTop': getSlideTopOffset(getCurrentSlideIndex() + 1) }, 500);
 }
 
-var hideArrowsOnScroll = function () {
-    var tmp = $("html,body").scrollTop();
+const hideArrowsOnScroll = function () {
+    const scrollTop = $("html,body").scrollTop();
+    const navLinks = $("#navbar-links li");
 
-    if (tmp <= getSlideTopOffset(0))
+    if (scrollTop <= getSlideTopOffset(0))
         $(".up-arrow").addClass("hidden")
     else
         $(".up-arrow").removeClass("hidden")
 
-    if (tmp >= getSlideTopOffset($(".slide").length - 1))
+    if (scrollTop >= getSlideTopOffset($(".slide").length - 1))
         $(".down-arrow").addClass("hidden")
     else
         $(".down-arrow").removeClass("hidden")
-
-    tmp = $("#navbar-links li");
-    tmp.removeClass("active");
-    $(tmp[getCurrentSlideIndex()]).addClass("active");
+    
+    navLinks.removeClass("active");
+    $(navLinks[getCurrentSlideIndex()]).addClass("active");
 }
 
 $(document).ready(main);
