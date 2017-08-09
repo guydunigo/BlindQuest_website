@@ -182,8 +182,15 @@ a#lang {
 .row-head {
 	padding-bottom: 7rem;
 	font-size: 1.8em;
+}
 
+h1.row-head {
 	text-align: right;
+}
+
+h2.row-head {
+	text-align: center;
+	font-size: 1.3em;
 }
 
 @media (max-width: 991px) {
@@ -198,13 +205,12 @@ a#lang {
 		max-height: 40vh;
 	}
 
-
 	.col-text {
 		font-size: 2rem;
 		padding-top: 5rem;
 	}
 
-	.row-head {
+	.row-head, h1.row-head, h2.row-head {
 		padding-bottom: 1rem;
 		text-align: center;
 	}
@@ -273,7 +279,7 @@ a.dlBtn:active  {
 
 /*-------------------- dl slide --------------------*/
 
-#download .btn {
+.btn {
 	margin-bottom: 2rem;
 }
 
@@ -286,7 +292,7 @@ a.dlBtn:active  {
 }
 
 @media (max-width: 767px) {
-	#download .btn {
+	.btn {
 		margin-bottom: 0;
 	}
 	#download .row-head {
@@ -303,3 +309,15 @@ a.dlBtn:active  {
 }
 
 /*-------------------- contact slide --------------------*/
+
+#contact h2.row-head {
+	padding-bottom: 0.1rem;
+}
+
+#clem {
+	color: #522066;
+}
+
+#gg {
+	color: #AE1717;
+}
