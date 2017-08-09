@@ -1,7 +1,10 @@
 var main = function () {
-    $(".arrow").removeClass("hidden")
     $(".up-arrow button").click(scrollToPreviousSlide);
     $(".down-arrow button").click(scrollToNextSlide);
+
+    $(window).scroll(hideArrowsOnScroll);
+
+    hideArrowsOnScroll();
 }
 
 var getCurrentSlideIndex = function () {
@@ -14,7 +17,7 @@ var getCurrentSlideIndex = function () {
     return i;
 }
 
-var getSlideTopOffset = function (slideIndex) {
+var getSlideTopOffset = function(slideIndex) {
     var slides = $(".slide");
     if (slideIndex < 0)
         slideIndex = 0;
@@ -29,6 +32,21 @@ var scrollToPreviousSlide = function () {
 }
 var scrollToNextSlide = function () {
     $("html, body").animate({ 'scrollTop': getSlideTopOffset(getCurrentSlideIndex() + 1) }, 500);
+}
+
+var hideArrowsOnScroll = function() {
+    var tmp = $("html,body").scrollTop();
+
+    if ( tmp <= getSlideTopOffset(0))
+        $(".up-arrow").addClass("hidden")
+    else
+        $(".up-arrow").removeClass("hidden")
+
+
+    if (tmp >= getSlideTopOffset($(".slide").length - 1))
+        $(".down-arrow").addClass("hidden")
+    else
+        $(".down-arrow").removeClass("hidden")
 }
 
 $(document).ready(main);
