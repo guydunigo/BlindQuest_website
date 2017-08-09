@@ -5,7 +5,7 @@
 
 /*-------------------- General --------------------*/
 
-body {
+html,body {
 	/*background-color: #fbdea3;*/
 	/*background-color: #e6d86a;*/
 	background-color: #e3ea9b;
@@ -84,7 +84,7 @@ a#lang {
 
 	z-index: 20;
 
-	font-size: 20px;
+	font-size: 1.8rem;
 	color: #7A5209;
 }
 
@@ -94,7 +94,7 @@ a#lang {
 	position: fixed;
 	right: 10px;
 	top: 40vh;
-	
+	z-index: 50;
 }
 
 #navbar-links ul li {
@@ -118,7 +118,7 @@ a#lang {
 	
 	z-index: 10;
 
-	font-size: 10vh;
+	font-size: 7rem;
 }
 
 .up-arrow {
@@ -196,9 +196,13 @@ a.dlBtn:active  {
 	font-size: 2.5rem;
 }
 
+.col-text .content {
+	font-size: 1.1em;
+}
+
 .row-head {
 	padding-bottom: 7rem;
-	font-size: 5vh;
+	font-size: 1.8em;
 
 	text-align: right;
 }
@@ -208,15 +212,13 @@ a.dlBtn:active  {
 		margin-bottom: 4rem;
 	}
 
-	.col-text p, .col-text table {
-		font-size: 2rem;
-	}
-
 	img.logo {
 		max-height: 40vh;
 	}
 
+
 	.col-text {
+		font-size: 2rem;
 		padding-top: 5rem;
 	}
 
@@ -227,16 +229,18 @@ a.dlBtn:active  {
 }
 
 @media (max-width: 767px) {
-	.col-text {
-		font-size: 1.5rem;
+	.arrow {
+		visibility: hidden;
 	}
 
-	.col-text p, .col-text table {
+	.col-text {
 		font-size: 1.2rem;
 	}
 
-	.col-right {
-		top: -7px;
+	.col-left {
+		margin-bottom: 0rem;
+	}
+	.col-text {
 		padding-top: 0rem;
 	}
 }

@@ -17,7 +17,7 @@ var getCurrentSlideIndex = function () {
     return i;
 }
 
-var getSlideTopOffset = function(slideIndex) {
+var getSlideTopOffset = function (slideIndex) {
     var slides = $(".slide");
     if (slideIndex < 0)
         slideIndex = 0;
@@ -34,10 +34,10 @@ var scrollToNextSlide = function () {
     $("html, body").animate({ 'scrollTop': getSlideTopOffset(getCurrentSlideIndex() + 1) }, 500);
 }
 
-var hideArrowsOnScroll = function() {
+var hideArrowsOnScroll = function () {
     var tmp = $("html,body").scrollTop();
 
-    if ( tmp <= getSlideTopOffset(0))
+    if (tmp <= getSlideTopOffset(0))
         $(".up-arrow").addClass("hidden")
     else
         $(".up-arrow").removeClass("hidden")
