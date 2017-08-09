@@ -193,6 +193,10 @@ h2.row-head {
 	font-size: 1.3em;
 }
 
+.btn {
+	margin-bottom: 2rem;
+}
+
 @media (max-width: 991px) {
 	.col-left, .col-right {
 		min-height: 40vh;
@@ -223,13 +227,15 @@ h2.row-head {
 
 	.col-text {
 		font-size: 1.2rem;
+		padding-top: 0rem;
 	}
 
 	.col-left {
 		margin-bottom: 0rem;
 	}
-	.col-text {
-		padding-top: 0rem;
+
+	.btn {
+		margin-bottom: 0;
 	}
 }
 
@@ -279,10 +285,6 @@ a.dlBtn:active  {
 
 /*-------------------- dl slide --------------------*/
 
-.btn {
-	margin-bottom: 2rem;
-}
-
 #download table {
 	font-size: 0.8em;
 }
@@ -292,9 +294,6 @@ a.dlBtn:active  {
 }
 
 @media (max-width: 767px) {
-	.btn {
-		margin-bottom: 0;
-	}
 	#download .row-head {
 		padding-bottom: 0.2em;
 	}
