@@ -5,6 +5,20 @@ var main = function () {
     $(window).scroll(hideArrowsOnScroll);
 
     hideArrowsOnScroll();
+
+    $("html").keydown(function(t) {
+        switch(t.which) {
+            case 38:
+                scrollToPreviousSlide();
+                break;
+            case 32:
+            case 40:
+                scrollToNextSlide();
+                break;
+            default:
+                break;
+        }
+    })
 }
 
 var getCurrentSlideIndex = function () {
