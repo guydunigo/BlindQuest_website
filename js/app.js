@@ -6,8 +6,8 @@ var main = function () {
 
     hideArrowsOnScroll();
 
-    $("html").keydown(function(t) {
-        switch(t.which) {
+    $("html").keydown(function (t) {
+        switch (t.which) {
             case 38:
                 scrollToPreviousSlide();
                 break;
@@ -23,10 +23,10 @@ var main = function () {
 
 var getCurrentSlideIndex = function () {
     const slidesOffsets = $(".slide").map(function (index, elm) { return $(elm).offset().top });
-    const currentScroll = $("html,body").scrollTop();
+    const currentScroll = $("html,body").scrollTop() + $(window).height() / 2;
     var i = 0;
 
-    for (i = slidesOffsets.length - 1; i > 0 && currentScroll < slidesOffsets[i]; i--) { }
+    for (i = slidesOffsets.length - 1; i > 0 && currentScroll < slidesOffsets[i]; i--);
 
     return i;
 }

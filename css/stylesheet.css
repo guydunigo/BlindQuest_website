@@ -167,7 +167,7 @@ a#lang {
 .slide {
 	padding-top: 10vh;
 	padding-bottom: 2vh;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .col-text {
