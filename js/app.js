@@ -42,11 +42,14 @@ var hideArrowsOnScroll = function () {
     else
         $(".up-arrow").removeClass("hidden")
 
-
     if (tmp >= getSlideTopOffset($(".slide").length - 1))
         $(".down-arrow").addClass("hidden")
     else
         $(".down-arrow").removeClass("hidden")
+
+    tmp = $("#navbar-links li");
+    tmp.removeClass("active");
+    $(tmp[getCurrentSlideIndex()]).addClass("active");
 }
 
 $(document).ready(main);

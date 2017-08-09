@@ -187,6 +187,9 @@ a#lang {
 }
 
 @media (max-width: 991px) {
+	.col-left, .col-right {
+		min-height: 40vh;
+	}
 	.col-left {
 		margin-bottom: 4rem;
 	}
@@ -267,3 +270,36 @@ a.dlBtn:active  {
 #func .bq {
 	color: #AD42DA;
 }
+
+/*-------------------- dl slide --------------------*/
+
+#download .btn {
+	margin-bottom: 2rem;
+}
+
+#download table {
+	font-size: 0.8em;
+}
+
+#download td:first-child {
+	padding-right: 1rem;
+}
+
+@media (max-width: 767px) {
+	#download .btn {
+		margin-bottom: 0;
+	}
+	#download .row-head {
+		padding-bottom: 0.2em;
+	}
+}
+
+#download.slide {
+	background-color: #F4C965;
+}
+
+#download .bq {
+	color: black;
+}
+
+/*-------------------- contact slide --------------------*/
