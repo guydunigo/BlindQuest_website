@@ -164,31 +164,10 @@ a#lang {
 
 /*-------------------- Slides --------------------*/
 
-.row {
+.slide {
 	padding-top: 10vh;
 	padding-bottom: 2vh;
 	height: 100vh;
-}
-
-img.logo {
-	image-rendering: -moz-crisp-edges;
-	image-rendering: -o-crisp-edges;
-	image-rendering: -webkit-optimize-contrast;
-	-ms-interpolation-mode: nearest-neighbor;
-	
-	image-rendering: pixelated;
-}
-
-a.dlBtn, 
-a.dlBtn:focus,
-a.dlBtn:hover,
-a.dlBtn:active  {
-	border-radius: 0;
-	background-color: #7A5209;
-	border: 0;
-	color: #e3ea9b;
-	font-family: manaspace;
-	font-size: 2rem;
 }
 
 .col-text {
@@ -245,8 +224,30 @@ a.dlBtn:active  {
 	}
 }
 
+/*-------------------- intro slide --------------------*/
 
-/*-------------------- how it works --------------------*/
+img.logo {
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -o-crisp-edges;
+	image-rendering: -webkit-optimize-contrast;
+	-ms-interpolation-mode: nearest-neighbor;
+	
+	image-rendering: pixelated;
+}
+
+a.dlBtn, 
+a.dlBtn:focus,
+a.dlBtn:hover,
+a.dlBtn:active  {
+	border-radius: 0;
+	background-color: #7A5209;
+	border: 0;
+	color: #e3ea9b;
+	font-family: manaspace;
+	font-size: 2rem;
+}
+
+/*-------------------- func slide --------------------*/
 
 #func table {
 	min-width: 100%;
@@ -257,4 +258,12 @@ a.dlBtn:active  {
 }
 #func table td:last-child {
 	text-align: right;
+}
+
+#func.slide {
+	background-color: #BFE3ED;
+}
+
+#func .bq {
+	color: #AD42DA;
 }
