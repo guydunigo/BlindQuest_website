@@ -59,8 +59,6 @@ div#bottomLine {
 }
 
 nav.navbar {
-	/*background-color: #fbc555;*/
-	/*background-color: #CAD711; */
 	background-color: #dced33;
 	border: 0px;
 	border-bottom: 5px solid #d7a140;
@@ -237,6 +235,10 @@ h2.row-head {
 	.btn {
 		margin-bottom: 0;
 	}
+
+	#navbar-links {
+		visibility: hidden;
+	}
 }
 
 /*-------------------- intro slide --------------------*/
@@ -309,14 +311,15 @@ a.dlBtn:active  {
 
 /*-------------------- contact slide --------------------*/
 
-#contact h2.row-head {
-	padding-bottom: 0.1rem;
-}
-
 #clem {
 	color: #522066;
+	padding-bottom: 0.1rem;
 }
 
 #gg {
 	color: #AE1717;
+}
+
+#who, #gg {
+	padding-bottom: 4rem;
 }
