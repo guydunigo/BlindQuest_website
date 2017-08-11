@@ -23,7 +23,7 @@ const main = function () {
 
 const getCurrentSlideIndex = function () {
     const slidesOffsets = $(".slide").map(function (index, elm) { return $(elm).offset().top });
-    const currentScroll = $("html,body").scrollTop() + $(window).height() / 2;
+    const currentScroll = $(window).scrollTop() + $(window).height() / 2;
     let i = 0;
 
     for (i = slidesOffsets.length - 1; i > 0 && currentScroll < slidesOffsets[i]; i--);
@@ -49,7 +49,7 @@ const scrollToNextSlide = function () {
 }
 
 const hideArrowsOnScroll = function () {
-    const scrollTop = $("html,body").scrollTop();
+    const scrollTop = $(window).scrollTop();
     const navLinks = $("#navbar-links li");
 
     if (scrollTop <= getSlideTopOffset(0))
