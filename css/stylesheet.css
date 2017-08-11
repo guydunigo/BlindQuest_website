@@ -220,7 +220,12 @@ h2.row-head {
 
 @media (max-width: 767px) {
 	.arrow {
-		visibility: hidden;
+		/*visibility: hidden;*/
+		font-size: 3rem;
+	}
+
+	.up-arrow {
+		top: 6rem;
 	}
 
 	.col-text {
