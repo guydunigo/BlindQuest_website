@@ -15,8 +15,14 @@ html,body {
 
 a,
 a:active,
-a:focus {
-	outline: 0;
+a:focus,
+button,
+button:active,
+button:focus {
+	outline: none;
+	outline-style: none;
+	border: 0;
+	text-decoration: none;
 }
 
 h1,h2,h3,h4 {
@@ -139,9 +145,6 @@ a#lang {
 .arrow button:focus,
 .arrow button:active {
 	color: #777;
-
-	text-decoration: none;
-	border: 0;
 }
 
 .up-arrow button:hover span {
