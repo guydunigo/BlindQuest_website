@@ -72,7 +72,7 @@ nav.navbar {
 	width: 100%;
 }
 
-.navbar-header .navbar-brand {
+.navbar-header.navbar-brand {
 	font-family: Manaspace;
 	font-size: 3rem;
 	margin-top: 5px;
