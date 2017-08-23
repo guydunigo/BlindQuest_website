@@ -15,6 +15,8 @@
     <!--<link rel="stylesheet" href="css/bootstrap-v4.min.css" /> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
         crossorigin="anonymous">
+
+    <link href="fonts/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">        
     <link rel="stylesheet" href="css/new_stylesheet.css" />
 </head>
 
@@ -23,25 +25,43 @@
     <nav class="navbar fixed-top">
         <a class="navbar-brand" href="/">BlindQuest</a>
         <a id="lang" class="nav-item" href="index_en.html" hreflang="en">
-            <span class="glyphicon glyphicon-globe"></span>
-            <span class="d-none d-sm-inline-block"> Please take away this frenchie stuff! I can't bear it!</span>
+            <span class="oi oi-globe"></span>
+            <span class="d-none d-sm-inline"> Please take away this frenchie stuff! I can't bear it!</span>
         </a>
     </nav>
 
     <!-- Footer -->
     <footer></footer>
 
+    <!-- Slides navbar -->
+    <div id="navbar-links" role="navigation">
+        <ul class="nav flex-column">
+            <li class="nav-item"><a href="#intro" class="nav-link oi oi-media-stop" role="button"></a></li>
+            <li class="nav-item"><a href="#func" class="nav-link oi oi-media-stop" role="button"></a></li>
+            <li class="nav-item"><a href="#download" class="nav-link oi oi-media-stop" role="button"></a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link oi oi-media-stop" role="button"></a></li>
+        </ul>
+    </div>
+
+    <!-- Change slide arrows -->
+    <div class="arrow up-arrow hidden">
+        <button class="btn-link text-center d-block mx-auto"><span class="oi oi-chevron-top"></span></button>
+    </div>
+    <div class="arrow down-arrow hidden">
+        <button class="btn-link text-center d-block mx-auto"><span class="oi oi-chevron-bottom"></span></button>
+    </div>
+
     <!-- Slides -->
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-10">
                 <div id="intro" class="slide row align-items-center">
-                    <div class="col-md">
-                        <img class="logo img-fluid mb-5" alt="BlindQuest" src="img/logo.png" />
+                    <div class="col-lg">
+                        <img class="logo img-fluid d-block mb-5 mx-auto" alt="BlindQuest" src="img/logo.png" />
                         <a class="btn-dl btn-effect btn btn-block" href="https://github.com/guydunigo/BlindQuest/archive/master.zip">Je le veux !</a>
                     </div>
-                    <div class="col-md-2"></div>
-                    <div class="col-md">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg">
                         <h1 class="text-right">Introduction</h1>
                         <p class="text-justify">
                             <span class="bq">BlindQuest</span> est un petit <em>Dungeon Crawler</em> où un oeil aguerri ne
@@ -50,7 +70,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="slide row align-items-center">
+                <div id="test" class="slide row align-items-center">
                     <div class="col-md text-justify">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptates et eum eligendi autem explicabo non perferendis
                         accusamus nesciunt similique ipsum impedit mollitia quas necessitatibus sunt. Magnam quia corrupti

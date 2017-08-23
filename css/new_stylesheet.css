@@ -15,6 +15,16 @@ h1,h2,h3,h4,.navbar-brand {
 	color: #777;
 }
 
+a,
+a:active,
+a:focus,
+button,
+button:active,
+button:focus {
+	border: 0;
+	text-decoration: none;
+}
+
 .bq {
 	font-family: Manaspace;
 	color: #007F7F;
@@ -86,8 +96,84 @@ footer {
 	color: #5e5e5e;
 }
 
+/*-------------------- Slide navbar --------------------*/
+
+#navbar-links {
+	position: fixed;
+	right: 0;
+	top: 40vh;
+	z-index: 50;
+}
+
+#navbar-links ul li {
+	margin-bottom: 2rem;
+}
+
+#navbar-links ul li a {
+	color: #7A5209;
+}
+
+#navbar-links ul li.active a {
+	color: #007F7F;
+}
+
+/*-------------------- Change slide arrows --------------------*/
+
+.arrow {
+	position: fixed;
+	min-width: 100%;
+	
+	z-index: 10;
+
+	font-size: 3rem;
+}
+
+.up-arrow {
+	top: 8vh;
+}
+
+.down-arrow {
+	bottom: 1vh;
+}
+
+.arrow span {
+	transition-duration: 0.5s;
+}
+.arrow button:active span {
+	transition-duration: 0.1s;
+}
+
+.arrow button,
+.arrow button:hover,
+.arrow button:focus,
+.arrow button:active {
+	color: #777;
+}
+
+.up-arrow button:hover span {
+	top: -2vh;
+}
+
+.up-arrow button:active span {
+	top: -10vh;
+}
+
+.down-arrow button:hover span {
+	top: 2vh;
+}
+
+.down-arrow button:active span {
+	top: 10vh;
+}
+
 /*-------------------- Slides --------------------*/
 
 .slide {
   min-height: 100vh;
+}
+
+/*-------------------- Intro --------------------*/
+
+#intro .logo {
+	max-height: 30vh;
 }
