@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
         crossorigin="anonymous">
 
-    <link href="fonts/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">        
+    <link href="fonts/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/new_stylesheet.css" />
 </head>
 
@@ -34,12 +34,28 @@
     <footer></footer>
 
     <!-- Slides navbar -->
-    <div id="navbar-links" role="navigation">
+    <div id="navbar-links" class="d-none d-sm-block" role="navigation">
         <ul class="nav flex-column">
-            <li class="nav-item"><a href="#intro" class="nav-link oi oi-media-stop" role="button"></a></li>
-            <li class="nav-item"><a href="#func" class="nav-link oi oi-media-stop" role="button"></a></li>
-            <li class="nav-item"><a href="#download" class="nav-link oi oi-media-stop" role="button"></a></li>
-            <li class="nav-item"><a href="#contact" class="nav-link oi oi-media-stop" role="button"></a></li>
+            <li class="nav-item">
+                <a href="#intro" class="nav-link oi oi-media-stop" role="button">
+                    <span class="sr-only">Introduction</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#func" class="nav-link oi oi-media-stop" role="button">
+                    <span class="sr-only">Fonctionnement</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#download" class="nav-link oi oi-media-stop" role="button">
+                    <span class="sr-only">Téléchargements</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact" class="nav-link oi oi-media-stop" role="button">
+                    <span class="sr-only">Contacts</span>
+                </a>
+            </li>
         </ul>
     </div>
 
@@ -53,24 +69,101 @@
 
     <!-- Slides -->
     <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-10">
-                <div id="intro" class="slide row align-items-center">
+        <div id="intro" class="slide row justify-content-center align-items-center">
+            <div class="col-sm-10">
+                <div class="row">
                     <div class="col-lg">
                         <img class="logo img-fluid d-block mb-5 mx-auto" alt="BlindQuest" src="img/logo.png" />
                         <a class="btn-dl btn-effect btn btn-block" href="https://github.com/guydunigo/BlindQuest/archive/master.zip">Je le veux !</a>
                     </div>
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg">
-                        <h1 class="text-right">Introduction</h1>
-                        <p class="text-justify">
-                            <span class="bq">BlindQuest</span> est un petit <em>Dungeon Crawler</em> où un oeil aguerri ne
-                            sera que fardeau en faveur d'une fine oreille.
-
-                        </p>
+                    <div class="separator col-lg-2"></div>
+                    <div class="col-lg d-flex align-items-center">
+                        <div>
+                            <h1 class="head">Introduction</h1>
+                            <p class="content text-justify">
+                                <span class="bq">BlindQuest</span> est un petit <em>Dungeon Crawler</em> où un oeil aguerri
+                                ne sera que fardeau en faveur d'une fine oreille.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div id="test" class="slide row align-items-center">
+            </div>
+        </div>
+        <div id="func" class="slide row justify-content-center align-items-center">
+            <div class="col-sm-10">
+                <div class="row">
+                    <div class="col-lg">
+                        <h1 class="head">Quoi ?!?</h1>
+                        <p class="content text-justify">
+                            <span class="bq">Pourfends</span>, <span class="bq">explore</span>, <span class="bq">trouve</span>...
+                            Mais prends garde malandrin ! Une <span class="bq">oreille</span> <span class="bq">bien</span>
+                            <span class="bq">tendue</span> peut t'éviter moult
+                            <span class="bq">noises</span> ou t'apporter <span class="bq">fortune</span> et
+                            <span class="bq">gloire</span>.
+                            <br/>Sache aussi que l'<span class="bq">eau</span> te cause une
+                            <span class="bq">peur</span> <span class="bq">bleue</span> et, à son contact, la
+                            <span class="bq">mort</span> assurée.
+                            <br/> Munis-toi de ton <span class="bq">casque</span>, ferme tes
+                            <span class="bq">yeux</span> et entame ton <span class="bq">voyage</span> !
+                        </p>
+                    </div>
+                    <div class="separator col-lg-2"></div>
+                    <div class="col-lg">
+                        <h1 class="head">Clavier/Magie ?</h1>
+                        <table class="content">
+                            <tr>
+                                <td class="bq">
+                                    <^>`
+                                </td>
+                                <td>Se déplacer</td>
+                            </tr>
+                            <tr>
+                                <td class="bq">E</td>
+                                <td>Attaquer lors d’un combat</td>
+                            </tr>
+                            <tr>
+                                <td class="bq">H</td>
+                                <td>Afficher/Cacher l’aide</td>
+                            </tr>
+                            <tr>
+                                <td class="bq">P</td>
+                                <td>Suspendre et reprendre la partie</td>
+                            </tr>
+                            <tr>
+                                <td class="bq">F</td>
+                                <td>Activer et désactiver le plein écran</td>
+                            </tr>
+                            <tr>
+                                <td class="bq">S</td>
+                                <td>Sauvegarder une partie</td>
+                            </tr>
+                            <tr>
+                                <td class="bq">C</td>
+                                <td>Charger une partie</td>
+                            </tr>
+                            <tr>
+                                <td class="bq">ECHAP</td>
+                                <td>Quitter le jeu</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="download" class="slide row justify-content-center align-items-center">
+            <div class="col-sm-10">
+                <div class="row">
+                    <div class="col-lg">
+                    </div>
+                    <div class="separator col-lg-2"></div>
+                    <div class="col-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="test" class="slide row justify-content-center align-items-center">
+            <div class="col-sm-10">
+                <div class="row">
                     <div class="col-md text-justify">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptates et eum eligendi autem explicabo non perferendis
                         accusamus nesciunt similique ipsum impedit mollitia quas necessitatibus sunt. Magnam quia corrupti
@@ -81,7 +174,7 @@
                         Rem sit mollitia sequi dolorum? Repellendus repellat, necessitatibus placeat asperiores ipsum beatae
                         at exercitationem ipsa? Laboriosam at ipsa inventore quod!
                     </div>
-                    <div class="col-md-2"></div>
+                    <div class="separator col-md-2"></div>
                     <div class="col-md text-justify">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, nesciunt ex officia adipisci laudantium quas ea nam maiores.
                         Dolor, libero. Dolore, libero! Totam, vel sit? Facere illo vero autem, ratione a natus possimus soluta

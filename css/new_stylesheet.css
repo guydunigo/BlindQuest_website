@@ -125,15 +125,15 @@ footer {
 	
 	z-index: 10;
 
-	font-size: 3rem;
+	font-size: 1.5rem;
 }
 
 .up-arrow {
-	top: 8vh;
+	top: 4rem;
 }
 
 .down-arrow {
-	bottom: 1vh;
+	bottom: 1rem;
 }
 
 .arrow span {
@@ -151,29 +151,92 @@ footer {
 }
 
 .up-arrow button:hover span {
-	top: -2vh;
+	top: -1rem;
 }
 
 .up-arrow button:active span {
-	top: -10vh;
+	top: -10rem;
 }
 
 .down-arrow button:hover span {
-	top: 2vh;
+	top: 1rem;
 }
 
 .down-arrow button:active span {
-	top: 10vh;
+	top: 10rem;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.arrow {
+		font-size: 3rem;
+	}
+	
+	.up-arrow {
+		top: 4rem;;
+	}
 }
 
 /*-------------------- Slides --------------------*/
 
 .slide {
-  min-height: 100vh;
+	min-height: 100vh;
+	padding: 5rem 0;
 }
 
-/*-------------------- Intro --------------------*/
+.head {
+	text-align: center;
+	font-size: 1.75rem;
+	margin-bottom: 1.2rem;
+}
+
+.separator {
+	margin-top: 3vh;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.head {
+		text-align: right;
+		font-size: 3rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.content {
+		font-size: 1.5rem;
+	}
+}
+
+/*-------------------- intro slide --------------------*/
 
 #intro .logo {
 	max-height: 30vh;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	#intro .logo {
+		max-height: 100%;
+	}
+}
+
+/*-------------------- func slide --------------------*/
+
+#func table {
+	min-width: 100%;
+}
+
+#func table td:first-child {
+	min-width: auto;
+}
+#func table td:last-child {
+	text-align: right;
+}
+
+#func.slide {
+	background-color: #BFE3ED;
+}
+
+#func .bq {
+	color: #AD42DA;
 }
