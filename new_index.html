@@ -4,13 +4,15 @@
 
 <head>
     <title>BlindQuest</title>
+    <link rel="icon" href="img/logo.png" />
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="icon" href="img/logo_medium.png" />
+    <link rel="alternate" hreflang="fr" href="/index.html">
+    <link rel="alternate" hreflang="en" href="/index_en.html">
 
-    <!--<link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+    <!--<link rel="stylesheet" href="css/bootstrap-v4.min.css" /> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/new_stylesheet.css" />
@@ -18,14 +20,16 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar fixed-top">
         <a class="navbar-brand" href="/">BlindQuest</a>
         <a id="lang" class="nav-item" href="index_en.html" hreflang="en">
             <span class="glyphicon glyphicon-globe"></span>
-            <span class="invisible-xs"> Please take away this frenchie stuff! I can't bear it!</span>
+            <span class="d-none d-sm-inline-block"> Please take away this frenchie stuff! I can't bear it!</span>
         </a>
     </nav>
 
+    <!-- Footer -->
+    <footer></footer>
 
     <!-- Slides -->
     <div class="container-fluid">
@@ -33,7 +37,7 @@
             <div class="col-10">
                 <div id="intro" class="slide row align-items-center">
                     <div class="col-md">
-                        <img class="logo img-fluid" alt="BlindQuest" src="img/logo.png" />
+                        <img class="logo img-fluid mb-5" alt="BlindQuest" src="img/logo.png" />
                         <a class="btn-dl btn-effect btn btn-block" href="https://github.com/guydunigo/BlindQuest/archive/master.zip">Je le veux !</a>
                     </div>
                     <div class="col-md-2"></div>

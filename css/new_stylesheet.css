@@ -10,7 +10,7 @@ html,body {
 	color: #777;
 }
 
-h1,h2,h3,h4 {
+h1,h2,h3,h4,.navbar-brand {
 	font-family: Manaspace;
 	color: #777;
 }
@@ -55,8 +55,39 @@ a.btn-dl:active  {
 	margin-left: 5%;
 }
 
+/*-------------------- Navbar and bottom bar --------------------*/
+
+footer {
+	position: fixed;
+	bottom: 0;
+	z-index: 20;
+	width: 100%;
+	height: 7px;
+	background-color: #d7a140;
+}
+
+.navbar {
+	background-color: #dced33;
+	border-bottom: 5px solid #d7a140;
+
+	z-index: 20;
+}
+
+.navbar a#lang {
+	color: #7A5209;
+}
+
+.navbar .navbar-brand {
+	padding: 0;
+	font-size: 1.5rem;
+}
+
+.navbar .navbar-brand:hover {
+	color: #5e5e5e;
+}
+
 /*-------------------- Slides --------------------*/
 
 .slide {
-    min-height: 100vh;
+  min-height: 100vh;
 }
