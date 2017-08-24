@@ -105,8 +105,6 @@ button:focus {
 /*-------------------- Navbar and bottom bar --------------------*/
 
 footer {
-	position: fixed;
-	bottom: 0;
 	z-index: 20;
 	width: 100%;
 	height: 7px;
@@ -157,9 +155,6 @@ footer {
 /*-------------------- Change slide arrows --------------------*/
 
 .arrow {
-	position: fixed;
-	min-width: 100%;
-	
 	z-index: 10;
 
 	font-size: 1.5rem;
@@ -246,10 +241,6 @@ footer {
 }
 
 /*-------------------- func slide --------------------*/
-
-#func table {
-	min-width: 100%;
-}
 
 #func table td:first-child {
 	min-width: auto;
