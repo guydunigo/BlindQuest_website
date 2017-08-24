@@ -146,6 +146,7 @@ footer {
 
 #navbar-links ul li a {
 	color: #7A5209;
+	padding-right: 1.5vw;
 }
 
 #navbar-links ul li.active a {

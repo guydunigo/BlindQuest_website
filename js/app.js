@@ -53,15 +53,15 @@
         const scrollTop = $(window).scrollTop();
         const navLinks = $("#navbar-links li");
 
-        if (scrollTop <= getSlideTopOffset(0))
-            $(".up-arrow").addClass("hidden")
+        if (scrollTop <= getSlideTopOffset(0) + 10)
+            $(".up-arrow").addClass("d-none");
         else
-            $(".up-arrow").removeClass("hidden")
+            $(".up-arrow").removeClass("d-none");
 
-        if (scrollTop >= getSlideTopOffset($(".slide").length - 1))
-            $(".down-arrow").addClass("hidden")
+        if (scrollTop >= getSlideTopOffset($(".slide").length - 1) - 10)
+            $(".down-arrow").addClass("d-none");
         else
-            $(".down-arrow").removeClass("hidden")
+            $(".down-arrow").removeClass("d-none");
 
         navLinks.removeClass("active");
         $(navLinks[getCurrentSlideIndex()]).addClass("active");
