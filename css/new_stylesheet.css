@@ -10,9 +10,16 @@ html,body {
 	color: #777;
 }
 
-h1,h2,h3,h4,.navbar-brand {
+h1,h2,h3,h4,h5,.navbar-brand {
 	font-family: Manaspace;
 	color: #777;
+	text-align: center;
+}
+
+h1.head {
+	text-align: center;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
 }
 
 a,
@@ -38,14 +45,19 @@ img.logo {
 	image-rendering: pixelated;
 }
 
-a.btn-dl, 
-a.btn-dl:focus,
-a.btn-dl:hover,
-a.btn-dl:active  {
+a.btn-bq, 
+a.btn-bq:focus,
+a.btn-bq:hover,
+a.btn-bq:active  {
 	border-radius: 0;
 	background-color: #7A5209;
 	color: #e3ea9b;
 	font-family: Manaspace;
+	margin-bottom: 1rem;
+}
+
+a.btn-bq:last-child {
+	margin-bottom: 0;
 }
 
 .btn-effect {
@@ -184,26 +196,20 @@ footer {
 	padding: 5rem 0;
 }
 
-.head {
-	text-align: center;
-	font-size: 1.75rem;
-	margin-bottom: 1.2rem;
-}
-
 .separator {
 	margin-top: 3vh;
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-	.head {
+	h1.head {
 		text-align: right;
-		font-size: 3rem;
+		font-size: 2.5rem;
 		margin-bottom: 1.5rem;
 	}
 
 	.content {
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 	}
 }
 
@@ -239,4 +245,42 @@ footer {
 
 #func .bq {
 	color: #AD42DA;
+}
+
+/*-------------------- dl slide --------------------*/
+
+#download td:first-child {
+	padding-right: 1rem;
+}
+
+#download.slide {
+	background-color: #F4C965;
+}
+
+#download .bq {
+	color: black;
+}
+
+/*-------------------- contact slide --------------------*/
+
+#contact .names {
+	font-family: Manaspace;
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+
+#contact #clem {
+	color: #522066;
+}
+
+#contact  #gg {
+	color: #AE1717;
+}
+
+#contact #who, #contact #gg {
+	padding-bottom: 0.5rem;
+}
+
+#contact .oi {
+	vertical-align: bottom;
 }
