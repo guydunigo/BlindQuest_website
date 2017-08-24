@@ -3,73 +3,97 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
     <title>BlindQuest</title>
+    <link rel="icon" href="img/logo.png" />
 
-    <link rel="alternate" hreflang="fr" href="/index.html">
-    <link rel="alternate" hreflang="en" href="/index_en.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="alternate" hreflang="fr" href="/">
 
-    <link rel="icon" href="img/logo_medium.png" />
+    <!--<link rel="stylesheet" href="css/bootstrap-v4.min.css" />-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link href="fonts/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/stylesheet.css" />
 </head>
 
-<body data-spy="scroll" data-target="#navbar-links">
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-header navbar-brand" href="#">
-                    BlindQuest
-            </a>
-        </div>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top">
+        <a class="navbar-brand" href="/">BlindQuest</a>
+        <a id="lang" class="nav-item" href="/" hreflang="fr">
+            <span class="oi oi-flag"></span>
+            <span class="d-none d-sm-inline"> Je ne spik pas anglich :/</span>
+        </a>
     </nav>
 
-    <a href="index.html" hreflang="fr" id="lang"><span class="glyphicon glyphicon-flag"></span><span class="hidden-xs"> Je ne spik pas anglich :/</span></a>
+    <!-- Footer -->
+    <footer class="fixed-bottom"></footer>
 
-    <div id="bottomLine"></div>
-
-    <div id="navbar-links">
-        <ul class="nav navbar-nav" role="tablist">
-            <li><a href="#intro" class="glyphicon glyphicon-stop"></a></li>
-            <li><a href="#func" class="glyphicon glyphicon-stop"></a></li>
-            <li><a href="#download" class="glyphicon glyphicon-stop"></a></li>
-            <li><a href="#contact" class="glyphicon glyphicon-stop"></a></li>
+    <!-- Slides navbar -->
+    <div id="navbar-links" class="d-none d-sm-block" role="navigation">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a href="#intro" class="nav-link oi oi-media-stop" role="button">
+                    <span class="sr-only">Introduction</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#func" class="nav-link oi oi-media-stop" role="button">
+                    <span class="sr-only">How it works</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#download" class="nav-link oi oi-media-stop" role="button">
+                    <span class="sr-only">Download</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact" class="nav-link oi oi-media-stop" role="button">
+                    <span class="sr-only">Contact</span>
+                </a>
+            </li>
         </ul>
     </div>
 
-    <div class="arrow up-arrow hidden">
-        <button class="btn-link text-center center-block"><span class="glyphicon glyphicon-menu-up"></span></button>
+    <!-- Change slide arrows -->
+    <div class="arrow up-arrow fixed-top w-100 d-none">
+        <button class="btn-link text-center d-block mx-auto"><span class="oi oi-chevron-top"></span></button>
     </div>
-    <div class="arrow down-arrow hidden">
-        <button class="btn-link text-center center-block"><span class="glyphicon glyphicon-menu-down"></span></button>
+    <div class="arrow down-arrow fixed-bottom w-100 d-none">
+        <button class="btn-link text-center d-block mx-auto"><span class="oi oi-chevron-bottom"></span></button>
     </div>
 
+    <!-- Slides -->
     <div class="container-fluid">
-        <div class="row slide" id="intro">
-            <div class="col-sm-offset-1 col-sm-10">
+        <div id="intro" class="slide row justify-content-center align-items-center">
+            <div class="col-sm-10">
                 <div class="row">
-                    <div class="col-md-5 col-left">
-                        <img alt="BlindQuest" class="img-responsive center-block logo" src="img/logo_medium.png" />
-                        <a href="https://github.com/guydunigo/BlindQuest/archive/master.zip" class="btn btn-block dlBtn hoverGrowth">I want it !</a>
+                    <div class="col-lg">
+                        <img class="logo img-fluid d-block mb-5 mx-auto" alt="BlindQuest" src="img/logo.png" />
+                        <a class="btn-bq btn-effect btn btn-block" href="https://github.com/guydunigo/BlindQuest/archive/master.zip">I want it !</a>
                     </div>
-                    <div class="col-md-offset-2 col-md-5 col-text col-right">
-                        <h1 class="row-head">Introduction</h1>
-                        <p class="text-justify content">
-                            <span class="bq">BlindQuest</span> is a little <em>Dungeon Crawler</em> in which a sharp eye
-                            is much cumbersome compared to a keen ear.
-                        </p>
+                    <div class="separator col-lg-1"></div>
+                    <div class="col-lg d-flex align-items-center">
+                        <div>
+                            <h1 class="head">Introduction</h1>
+                            <p class="content text-justify">
+                                <span class="bq">BlindQuest</span> is a little <em>Dungeon Crawler</em> in which a sharp eye
+                                is much cumbersome compared to a keen ear.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row slide" id="func">
-            <div class="col-sm-offset-1 col-sm-10">
+        <div id="func" class="slide row justify-content-center align-items-center">
+            <div class="col-sm-10">
                 <div class="row">
-                    <div class="col-md-5 col-text col-left">
-                        <h1 class="row-head">What ?!?</h1>
-                        <p class="text-justify content">
+                    <div class="col-lg">
+                        <h1 class="head">What ?!?</h1>
+                        <p class="content text-justify">
                             <span class="bq">Slay</span>, <span class="bq">delve</span>, <span class="bq">loot</span>...
                             But beware ruffian! <span class="bq">Listen</span> <span class="bq">carefully</span> and you
                             will dodge numerous
@@ -80,9 +104,10 @@
                             <span class="bq">eyes</span> and <span class="bq"><em>bon voyage</em></span> !
                         </p>
                     </div>
-                    <div class="col-md-offset-2 col-md-5 col-text col-right">
-                        <h1 class="row-head">Keyboard/Magic ?</h1>
-                        <table class="content">
+                    <div class="separator col-lg-1"></div>
+                    <div class="col-lg">
+                        <h1 class="head">Keyboard/Magic ?</h1>
+                        <table class="content w-100">
                             <tr>
                                 <td class="bq">
                                     <^>`
@@ -122,21 +147,30 @@
                 </div>
             </div>
         </div>
-        <div class="row slide" id="download">
-            <div class="col-sm-offset-1 col-sm-10">
+        <div id="download" class="slide row justify-content-center align-items-center">
+            <div class="col-sm-10">
                 <div class="row">
-                    <div class="col-md-5 col-left col-text">
-                        <h1 class="row-head">For me !</h1>
-                        <div id="links">
-                            <a href="https://github.com/guydunigo/BlindQuest/archive/master.zip" class="btn btn-block dlBtn hoverGrowth">ZIP archive</a>
-                            <a href="https://github.com/guydunigo/BlindQuest/" class="btn btn-block dlBtn hoverGrowth">Github</a>
-                            <a href="https://github.com/guydunigo/BlindQuest/tree/master/sons" class="btn btn-block dlBtn hoverGrowth">Music</a>
-                            <a href="https://github.com/guydunigo/BlindQuest/blob/master/README.md" class="btn btn-block dlBtn hoverGrowth">Documentation</a>
+                    <div class="col-lg">
+                        <h1 class="head">For me !</h1>
+                        <div>
+                            <a class="btn-bq btn-effect btn btn-block" href="https://github.com/guydunigo/BlindQuest/archive/master.zip">
+                                ZIP archive
+                            </a>
+                            <a class="btn-bq btn-effect btn btn-block" href="https://github.com/guydunigo/BlindQuest/">
+                                Github
+                            </a>
+                            <a class="btn-bq btn-effect btn btn-block" href="https://github.com/guydunigo/BlindQuest/tree/master/sons">
+                                Music
+                            </a>
+                            <a class="btn-bq btn-effect btn btn-block" href="https://github.com/guydunigo/BlindQuest/blob/master/README.md">
+                                Documentation
+                            </a>
                         </div>
                     </div>
-                    <div class="col-md-offset-2 col-md-5 col-text col-right">
-                        <h1 class="row-head">Licence</h1>
-                        <p class="text-justify content">
+                    <div class="separator col-lg-1"></div>
+                    <div class="col-lg">
+                        <h1 class="head">Licence</h1>
+                        <p class="content text-justify">
                             Feel free to <span class="bq">share</span> this game and its content <span class="text-danger">as much as you want</span>,
                             as long as it is <span class="bq">free of charge</span>,
                             <span class="bq">unchanged</span> and includes our names. Find us on the next slide to share
@@ -146,12 +180,24 @@
                             <tr>
                                 <td>
                                     <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
-                                    <img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
-                                </a>
+                                        <img alt="Licence Creative Commons" style="border-width:0"
+                                            src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
+                                    </a>
                                 </td>
                                 <td>
                                     <small class="text-justify">
-                                        <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">BlindQuest</span> de <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">CARON, GOÑI, TAUPIAC</span> est mis à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">licence Creative Commons Attribution - Pas d&#39;Utilisation Commerciale - Pas de Modification 4.0 International</a>.
+                                        <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">
+                                            BlindQuest
+                                        </span>
+                                        de
+                                        <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">
+                                            CARON, GOÑI, TAUPIAC
+                                        </span>
+                                        est mis à disposition selon les termes de la
+                                        <a rel="license"
+                                            href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+                                            licence Creative Commons Attribution - Pas d&#39;Utilisation Commerciale - Pas de Modification 4.0 International
+                                        </a>.
                                     </small>
                                 </td>
                             </tr>
@@ -160,22 +206,35 @@
                 </div>
             </div>
         </div>
-        <div class="row slide" id="contact">
-            <div class="col-sm-offset-1 col-sm-10">
+        <div id="contact" class="slide row justify-content-center align-items-center">
+            <div class="col-sm-10">
                 <div class="row">
-                    <div class="col-md-5 col-left col-text">
-                        <h1 class="row-head" id="who">Who made it ?</h1>
-                        <h2 id="clem" class="row-head">CLEMENCE CARON</h2>
-                        <h2 id="gg" class="row-head">GUILLAUME GONI</h2>
+                    <div class="col-lg">
+                        <h1 id="who" class="head">Who made it ?</h1>
+                        <div class="row names">
+                            <div id="clem" class="col-sm text-center">
+                                CLEMENCE CARON
+                            </div>
+                            <div id="gg" class="col-sm text-center">
+                                GUILLAUME GONI
+                            </div>
+                        </div>
                         <div class="links">
-                            <a href="https://github.com/guydunigo/" class="btn btn-block dlBtn hoverGrowth">Github</a>
-                            <a href="mailto:g.goni@outlook.fr,c4caron@enib.fr?subject=BlindQuest%20" class="btn btn-block dlBtn hoverGrowth">Email</a>
-                            <h3 class="text-center"><span class="glyphicon glyphicon-comment"></span> g.goni@outlook.fr</h2>
+                            <a class="btn-bq btn-effect btn btn-block" href="https://github.com/guydunigo/">
+                                Github
+                            </a>
+                            <a class="btn-bq btn-effect btn btn-block" href="mailto:g.goni@outlook.fr,c4caron@enib.fr?subject=BlindQuest%20">
+                                Email
+                            </a>
+                            <h4 class="text-center">
+                                <span class="oi oi-comment-square"></span> g.goni@outlook.fr
+                            </h4>
                         </div>
                     </div>
-                    <div class="col-md-offset-2 col-md-5 col-text col-right">
-                        <h1 class="row-head">Why ?</h1>
-                        <p class="text-justify content">
+                    <div class="separator col-lg-1"></div>
+                    <div class="col-lg">
+                        <h1 class="head">Pourquoi ?</h1>
+                        <p class="content text-justify">
                             <span class="bq">BlindQuest</span> was designed during spring 2015 for a coding project at the
                             <span class="bq">ENIB</span> (École Nationale d'Ingénieurs de Brest). We wanted to create a game
                             beyond usual adventures with a unique gameplay.
@@ -186,8 +245,9 @@
             </div>
         </div>
     </div>
-
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    
+    <!--<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
 </body>
 
